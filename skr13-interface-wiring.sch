@@ -1,7 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:wanhao extruder passthrough-cache
-LIBS:wanhao extruder pcb-cache
-LIBS:wanhao mainboard external-cache
+LIBS:skr13-interface-wiring-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -61,13 +59,13 @@ Wire Wire Line
 Wire Wire Line
 	1600 4250 1300 4250
 Text Label 1600 4550 2    50   ~ 0
-1B
+E0-1B
 Text Label 1600 4450 2    50   ~ 0
-1A
+E0-1A
 Text Label 1600 4350 2    50   ~ 0
-2A
+E0-2A
 Text Label 1600 4250 2    50   ~ 0
-2B
+E0-2B
 $Comp
 L Connector_Generic:Conn_01x04 E-MOT?
 U 1 1 5D7DA080
@@ -235,10 +233,10 @@ F 3 "~" H 4150 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 YMOT?
+L Connector_Generic:Conn_01x04 YMOT
 U 1 1 5D75A424
 P 7900 2250
-F 0 "YMOT?" H 7980 2242 50  0000 L CNN
+F 0 "YMOT" H 7980 2242 50  0000 L CNN
 F 1 "Conn_01x04" H 7980 2151 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 7900 2250 50  0001 C CNN
 F 3 "~" H 7900 2250 50  0001 C CNN
@@ -264,12 +262,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 TBED?
 U 1 1 5D743AA1
-P 9000 3450
-F 0 "TBED?" H 8918 3667 50  0000 C CNN
-F 1 "Conn_01x02" H 8918 3576 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 3450 50  0001 C CNN
-F 3 "~" H 9000 3450 50  0001 C CNN
-	1    9000 3450
+P 9000 2850
+F 0 "TBED?" H 8918 3067 50  0000 C CNN
+F 1 "Conn_01x02" H 8918 2976 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 2850 50  0001 C CNN
+F 3 "~" H 9000 2850 50  0001 C CNN
+	1    9000 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -329,89 +327,89 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 Y-?
 U 1 1 5D79BE6D
-P 9000 2150
-F 0 "Y-?" H 8918 2367 50  0000 C CNN
-F 1 "Conn_01x02" H 8918 2276 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 2150 50  0001 C CNN
-F 3 "~" H 9000 2150 50  0001 C CNN
-	1    9000 2150
+P 9000 1550
+F 0 "Y-?" H 8918 1767 50  0000 C CNN
+F 1 "Conn_01x02" H 8918 1676 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 1550 50  0001 C CNN
+F 3 "~" H 9000 1550 50  0001 C CNN
+	1    9000 1550
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 Z-?
 U 1 1 5D79CF66
-P 9000 2700
-F 0 "Z-?" H 8918 2917 50  0000 C CNN
-F 1 "Conn_01x02" H 8918 2826 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 2700 50  0001 C CNN
-F 3 "~" H 9000 2700 50  0001 C CNN
-	1    9000 2700
+P 9000 2100
+F 0 "Z-?" H 8918 2317 50  0000 C CNN
+F 1 "Conn_01x02" H 8918 2226 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 2100 50  0001 C CNN
+F 3 "~" H 9000 2100 50  0001 C CNN
+	1    9000 2100
 	-1   0    0    -1  
 $EndComp
-Text Label 9550 4100 2    50   ~ 0
+Text Label 9550 3500 2    50   ~ 0
 HBED24V
 Wire Wire Line
-	9200 4100 9550 4100
-Text Label 9500 2150 2    50   ~ 0
+	9200 3500 9550 3500
+Text Label 9500 1550 2    50   ~ 0
 Y-MIN
-Text Label 9500 2250 2    50   ~ 0
+Text Label 9500 1650 2    50   ~ 0
 GND
-Text Label 9500 2700 2    50   ~ 0
+Text Label 9500 2100 2    50   ~ 0
 Z-MIN
-Text Label 9500 2800 2    50   ~ 0
+Text Label 9500 2200 2    50   ~ 0
 GND
 Wire Wire Line
-	9200 2700 9500 2700
+	9200 2100 9500 2100
 Wire Wire Line
-	9200 2800 9500 2800
+	9200 2200 9500 2200
 Wire Wire Line
-	9200 2150 9500 2150
+	9200 1550 9500 1550
 Wire Wire Line
-	9200 2250 9500 2250
-Text Label 9500 3450 2    50   ~ 0
+	9200 1650 9500 1650
+Text Label 9500 2850 2    50   ~ 0
 TBED-A
-Text Label 9500 3550 2    50   ~ 0
+Text Label 9500 2950 2    50   ~ 0
 TBED-B
 Wire Wire Line
-	9200 3450 9500 3450
+	9200 2850 9500 2850
 Wire Wire Line
-	9500 3550 9200 3550
+	9500 2950 9200 2950
 Wire Wire Line
-	9650 4850 9200 4850
+	9650 4250 9200 4250
 Wire Wire Line
-	9200 4750 9650 4750
-Text Label 9650 4750 2    50   ~ 0
+	9200 4150 9650 4150
+Text Label 9650 4150 2    50   ~ 0
 AUX
-Text Label 9650 4850 2    50   ~ 0
+Text Label 9650 4250 2    50   ~ 0
 GND
 $Comp
 L Connector_Generic:Conn_01x02 AUX?
 U 1 1 5D7A6A6D
-P 9000 4750
-F 0 "AUX?" H 8918 4967 50  0000 C CNN
-F 1 "Conn_01x02" H 8918 4876 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 4750 50  0001 C CNN
-F 3 "~" H 9000 4750 50  0001 C CNN
-	1    9000 4750
+P 9000 4150
+F 0 "AUX?" H 8918 4367 50  0000 C CNN
+F 1 "Conn_01x02" H 8918 4276 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 4150 50  0001 C CNN
+F 3 "~" H 9000 4150 50  0001 C CNN
+	1    9000 4150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 4200 9200 4200
-Text Label 9550 4200 2    50   ~ 0
+	9550 3600 9200 3600
+Text Label 9550 3600 2    50   ~ 0
 HBEDGND
 $Comp
 L Connector_Generic:Conn_01x02 HBED?
 U 1 1 5D79ACF2
-P 9000 4100
-F 0 "HBED?" H 8918 4317 50  0000 C CNN
-F 1 "Conn_01x02" H 8918 4226 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 4100 50  0001 C CNN
-F 3 "~" H 9000 4100 50  0001 C CNN
-	1    9000 4100
+P 9000 3500
+F 0 "HBED?" H 8918 3717 50  0000 C CNN
+F 1 "Conn_01x02" H 8918 3626 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9000 3500 50  0001 C CNN
+F 3 "~" H 9000 3500 50  0001 C CNN
+	1    9000 3500
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
-	8650 1800 8650 5200
+	8650 1200 8650 4600
 Text Label 3600 2350 0    50   ~ 0
 Z-
 Text Label 3600 2450 0    50   ~ 0
@@ -494,6 +492,179 @@ F 1 "Conn_01x02" H 4068 3666 50  0000 C CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 4150 3900 50  0001 C CNN
 F 3 "~" H 4150 3900 50  0001 C CNN
 	1    4150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4700 4000 4700
+Wire Wire Line
+	3700 4600 4000 4600
+Wire Wire Line
+	3700 4500 4000 4500
+Wire Wire Line
+	3700 4400 4000 4400
+Text Label 3700 4700 0    50   ~ 0
+E0-1B
+Text Label 3700 4600 0    50   ~ 0
+E0-1A
+Text Label 3700 4500 0    50   ~ 0
+E0-2A
+Text Label 3700 4400 0    50   ~ 0
+E0-2B
+$Comp
+L Connector_Generic:Conn_01x04 SKR-E0MOT
+U 1 1 5D9D5B87
+P 4200 4500
+F 0 "SKR-E0MOT" H 4280 4492 50  0000 L CNN
+F 1 "Conn_01x04" H 4280 4401 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 4200 4500 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4300 5700 4300
+Wire Wire Line
+	6000 4200 5700 4200
+Wire Wire Line
+	6000 4100 5700 4100
+Wire Wire Line
+	6000 4000 5700 4000
+Text Label 6000 4300 2    50   ~ 0
+Z-1B
+Text Label 6000 4200 2    50   ~ 0
+Z-1A
+Text Label 6000 4100 2    50   ~ 0
+Z-2A
+Text Label 6000 4000 2    50   ~ 0
+Z-2B
+$Comp
+L Connector_Generic:Conn_01x04 SKR-ZMOT?
+U 1 1 5D9F704B
+P 5500 4100
+F 0 "SKR-ZMOT?" H 5580 4092 50  0000 L CNN
+F 1 "Conn_01x04" H 5580 4001 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5500 4100 50  0001 C CNN
+F 3 "~" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3550 5700 3550
+Wire Wire Line
+	6000 3450 5700 3450
+Wire Wire Line
+	6000 3350 5700 3350
+Wire Wire Line
+	6000 3250 5700 3250
+Text Label 6000 3550 2    50   ~ 0
+Y-1B
+Text Label 6000 3450 2    50   ~ 0
+Y-1A
+Text Label 6000 3350 2    50   ~ 0
+Y-2A
+Text Label 6000 3250 2    50   ~ 0
+Y-2B
+$Comp
+L Connector_Generic:Conn_01x04 SKR-YMOT
+U 1 1 5DA0563E
+P 5500 3350
+F 0 "SKR-YMOT" H 5580 3342 50  0000 L CNN
+F 1 "Conn_01x04" H 5580 3251 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5500 3350 50  0001 C CNN
+F 3 "~" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2900 5700 2900
+Wire Wire Line
+	6000 2800 5700 2800
+Wire Wire Line
+	6000 2700 5700 2700
+Wire Wire Line
+	6000 2600 5700 2600
+Text Label 6000 2900 2    50   ~ 0
+X-1B
+Text Label 6000 2800 2    50   ~ 0
+X-1A
+Text Label 6000 2700 2    50   ~ 0
+X-2A
+Text Label 6000 2600 2    50   ~ 0
+X-2B
+$Comp
+L Connector_Generic:Conn_01x04 SKR-XMOT
+U 1 1 5DA08AA0
+P 5500 2700
+F 0 "SKR-XMOT" H 5580 2692 50  0000 L CNN
+F 1 "Conn_01x04" H 5580 2601 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5500 2700 50  0001 C CNN
+F 3 "~" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 XMOT
+U 1 1 5D9E7DF5
+P 7900 1550
+F 0 "XMOT" H 7980 1542 50  0000 L CNN
+F 1 "Conn_01x04" H 7980 1451 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 7900 1550 50  0001 C CNN
+F 3 "~" H 7900 1550 50  0001 C CNN
+	1    7900 1550
+	1    0    0    -1  
+$EndComp
+Text Label 7400 1450 0    50   ~ 0
+X-2B
+Text Label 7400 1550 0    50   ~ 0
+X-2A
+Text Label 7400 1650 0    50   ~ 0
+X-1A
+Text Label 7400 1750 0    50   ~ 0
+X-1B
+Wire Wire Line
+	7400 1450 7700 1450
+Wire Wire Line
+	7400 1550 7700 1550
+Wire Wire Line
+	7400 1650 7700 1650
+Wire Wire Line
+	7400 1750 7700 1750
+Text Label 3600 5100 2    50   ~ 0
+HBEDGND
+Wire Wire Line
+	3600 5100 4000 5100
+Text Label 3600 5000 2    50   ~ 0
+HBED24V
+Wire Wire Line
+	4000 5000 3600 5000
+$Comp
+L Connector_Generic:Conn_01x02 SKR-TH?
+U 1 1 5DA16995
+P 4200 5000
+F 0 "SKR-TH?" H 4118 4675 50  0000 C CNN
+F 1 "SKR-HE0" H 4118 4766 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 4200 5000 50  0001 C CNN
+F 3 "~" H 4200 5000 50  0001 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+Text Label 3600 5600 2    50   ~ 0
+HEATGND
+Wire Wire Line
+	3600 5600 4000 5600
+Text Label 3600 5500 2    50   ~ 0
+24V
+Wire Wire Line
+	4000 5500 3600 5500
+$Comp
+L Connector_Generic:Conn_01x02 SKR-HBED
+U 1 1 5DA1699F
+P 4200 5500
+F 0 "SKR-HBED" H 4118 5175 50  0000 C CNN
+F 1 "Conn_01x02" H 4118 5266 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 4200 5500 50  0001 C CNN
+F 3 "~" H 4200 5500 50  0001 C CNN
+	1    4200 5500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
